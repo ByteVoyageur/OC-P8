@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  &__logo {
+    max-width: 210px;
+    height: auto;
+  }
+
+  &__nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+
+      li {
+        a {
+          text-decoration: none;
+          color: #ff6060;
+          font-weight: bold;
+
+          &:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6060;
+          }
+        }
+      }
+    }
+  }
+}
