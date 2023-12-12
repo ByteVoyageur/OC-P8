@@ -1,0 +1,17 @@
+// Footer.scss
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+
+  &__content {
+    font-size: 0.875rem;
+  }
+
+  &__logo {
+    fill: #ffffff;
+    max-width: 210px;
+    height: auto;
+  }
+}
