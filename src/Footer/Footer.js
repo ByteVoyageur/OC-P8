@@ -1,7 +1,7 @@
 // Footer.js
 import React from 'react'
 import './Footer.scss'
-import { ReactComponent as Logo } from '../assets/img/logo_kasa.svg'
+import { ReactComponent as Logo } from '../assets/img/logo_kasa_white.svg'
 
 const Footer = () => {
   return (

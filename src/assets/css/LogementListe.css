@@ -1,0 +1,23 @@
+.logement-liste {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 16px;
+}
+.logement-liste .logement-carte {
+  flex-basis: calc(33.333% - 16px);
+  max-width: calc(33.333% - 16px);
+}
+@media (max-width: 768px) {
+  .logement-liste .logement-carte {
+    flex-basis: calc(50% - 16px);
+    max-width: calc(50% - 16px);
+  }
+}
+@media (max-width: 480px) {
+  .logement-liste .logement-carte {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
