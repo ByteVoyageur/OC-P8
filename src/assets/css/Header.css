@@ -2,7 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 .header__logo {
   max-width: 200px;
@@ -11,7 +14,7 @@
 .header__nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
 }
 .header__nav ul li a {
   text-decoration: none;

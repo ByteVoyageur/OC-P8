@@ -4,7 +4,7 @@ import logementsData from '../assets/data/logements.json'
 import './LogementListe.scss'
 
 function LogementListe() {
-  const [logements, setLogements] = useState(logementsData)
+  const [logements] = useState(logementsData)
 
   return (
     <div className='logement-liste'>
