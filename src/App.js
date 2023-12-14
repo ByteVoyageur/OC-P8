@@ -7,6 +7,8 @@ import Footer from './Footer/Footer'
 import LogementListe from './LogementListe/LogementListe'
 import LogementDetail from './LogementDetail/LogementDetail'
 import Banner from './Banner/Banner'
+import About from './About/About'
+import NotFound from './NotFound/NotFound'
 
 function HomePage() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Routes>
           <Route exact path='/' element={<HomePage />} />
           <Route path='/logement/:id' element={<LogementDetail />} />
+          <Route path='/about' Component={<About />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />
       </div>

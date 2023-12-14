@@ -10,7 +10,7 @@
   align-items: center;
   border-radius: 20px;
   margin: 0 auto;
-  width: 90%; // Adjust to match the width of other elements
+  width: 90%; 
 
   &::before {
     content: '';
@@ -19,9 +19,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); // White overlay for half-transparency
+    background: rgba(0, 0, 0, 0.5); 
     z-index: 1;
-    border-radius: 20px; // Match the border-radius of the banner
+    border-radius: 20px; 
   }
 
   &__content {
@@ -32,10 +32,9 @@
 
   &__title {
     font-size: 2rem;
-    padding: 0 2rem; // Add padding if needed
+    padding: 0 2rem; 
   }
 
-  // Adjust the media queries as needed
   @media (max-width: 768px) {
     height: 250px;
     &__title {

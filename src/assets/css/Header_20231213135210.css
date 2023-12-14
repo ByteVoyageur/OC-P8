@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.header__logo {
+  max-width: 200px;
+  height: auto;
+}
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+.header__nav ul li a {
+  text-decoration: none;
+  color: #ff6060;
+  font-weight: bold;
+}
+.header__nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff6060;
+}

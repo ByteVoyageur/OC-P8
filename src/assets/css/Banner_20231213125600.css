@@ -1,0 +1,32 @@
+.banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner__content {
+  text-align: center;
+  color: white;
+}
+.banner__title {
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .banner {
+    height: 250px;
+  }
+  .banner__title {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .banner {
+    height: 200px;
+  }
+  .banner__title {
+    font-size: 1.2rem;
+  }
+}
