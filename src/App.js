@@ -4,20 +4,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.scss'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
-import LogementListe from './LogementListe/LogementListe'
+import HomePage from './HomePage/HomePage'
 import LogementDetail from './LogementDetail/LogementDetail'
-import Banner from './Banner/Banner'
 import About from './About/About'
 import NotFound from './NotFound/NotFound'
-
-function HomePage() {
-  return (
-    <>
-      <Banner />
-      <LogementListe />
-    </>
-  )
-}
 
 function App() {
   return (
