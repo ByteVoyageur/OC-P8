@@ -1,7 +1,7 @@
 //PhotoSlider.js
 import React, { useState } from 'react'
-import leftArrow from '../assets/img/arrow_left.svg'
-import rightArrow from '../assets/img/arrow_right.svg'
+import leftArrow from '../../assets/img/arrow_left.svg'
+import rightArrow from '../../assets/img/arrow_right.svg'
 import './PhotoSlider.scss'
 
 const PhotoGallery = ({ pictures }) => {

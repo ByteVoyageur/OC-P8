@@ -1,0 +1,26 @@
+// Equipments.scss
+.equipments-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.equipments {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+
+  &.open {
+    max-height: 500px;
+  }
+  h3 {
+    margin-bottom: 1rem; 
+  }
+  ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+  li {
+    margin-bottom: 0.5rem; 
+  }
+}

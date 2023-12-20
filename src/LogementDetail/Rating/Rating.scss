@@ -1,0 +1,30 @@
+// Rating.scss
+.profile-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 24px; 
+    display: flex;
+    align-items: center;
+
+    .filled-star,
+    .empty-star {
+      margin-right: 2px; 
+      color: #FF6060
+    }
+
+    @media (max-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+}

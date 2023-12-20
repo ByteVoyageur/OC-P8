@@ -1,0 +1,77 @@
+.logement-detail-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+
+  .logement-info-profile-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width:768px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.description-equipments-section {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  margin-bottom: 35px;
+
+  @media (max-width: 768px) {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .description-section, .equipments-section {
+    width: 50%; 
+
+    @media (max-width: 768px) {
+      width: 100%; 
+    }
+  }
+
+  .toggle-button {
+    background-color: #ff6060;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 90%;
+    border-radius: 8px;
+    text-align: left;
+
+    &:focus {
+      outline: none;
+    }
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: 5px;
+      vertical-align: middle;
+      border-top: 5px solid;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+
+    }
+    &.open::after {
+      border-top: none;
+      border-bottom: 5px solid;
+    }
+  }
+
+  .description, .equipments {
+    display: none;
+  }
+
+  .description.open, .equipments.open {
+    display: block;
+  }
+}
+

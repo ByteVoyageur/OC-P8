@@ -1,0 +1,29 @@
+.profile-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .profile-rating {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.profile-rating .rating {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+.profile-rating .rating .filled-star,
+.profile-rating .rating .empty-star {
+  margin-right: 2px;
+  color: #FF6060;
+}
+@media (max-width: 768px) {
+  .profile-rating .rating {
+    justify-content: space-between;
+  }
+}

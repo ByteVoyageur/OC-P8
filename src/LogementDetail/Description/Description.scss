@@ -1,0 +1,14 @@
+//Description.scss
+.description {
+  overflow: hidden; 
+  max-height: 0; 
+  padding: 0 20px;
+  opacity: 0;
+  transition: max-height 2s ease-in-out, padding 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+
+  &.open {
+    max-height: 500px; 
+    padding: 20px;
+    opacity: 1;
+  }
+}
