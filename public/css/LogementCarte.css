@@ -1,10 +1,17 @@
 .logement-carte {
+  aspect-ratio: 1/1;
   border-radius: 10px;
   overflow: hidden;
   object-fit: cover;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   transition: box-shadow 0.3s ease;
+}
+@media (max-width: 768px) {
+  .logement-carte {
+    height: auto;
+    aspect-ratio: unset;
+  }
 }
 .logement-carte:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);

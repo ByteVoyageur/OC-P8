@@ -1,5 +1,6 @@
 //LogementCarte.scss
 .logement-carte {
+  aspect-ratio: 1 / 1;
   border-radius: 10px;
   overflow: hidden;
   object-fit: cover;
@@ -7,6 +8,11 @@
   position: relative;
   transition: box-shadow 0.3s ease;
 
+  @media (max-width:768px) {
+    height: auto;
+    aspect-ratio: unset;
+  } 
+    
   &:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   }

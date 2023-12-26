@@ -1,3 +1,4 @@
+//LogementListe.js
 import React, { useState } from 'react'
 import LogementCarte from '../LogementCarte/LogementCarte'
 import logementsData from '../assets/data/logements.json'

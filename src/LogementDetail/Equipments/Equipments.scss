@@ -1,24 +1,22 @@
 // Equipments.scss
-.equipments-section {
-  display: flex;
-  flex-direction: column;
-}
 
 .equipments {
+  width: 100%;
+  background-color: #F6F6F6;
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.5s ease-in-out;
+  color: #FF6060;
 
   &.open {
     max-height: 500px;
-  }
-  h3 {
-    margin-bottom: 1rem; 
+    width: 90%;
   }
   ul {
+    display: flex;
+    flex-direction: column;
     list-style: none; 
-    padding: 0; 
-    margin: 0; 
+    padding-left: 10px;
   }
   li {
     margin-bottom: 0.5rem; 

@@ -1,12 +1,18 @@
 .description {
+  display: flex;
   overflow: hidden;
   max-height: 0;
-  padding: 0 20px;
   opacity: 0;
   transition: max-height 2s ease-in-out, padding 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .description.open {
+  background-color: #F6F6F6;
+  color: #FF6060;
   max-height: 500px;
-  padding: 20px;
   opacity: 1;
+  width: 90%;
+}
+.description.open p {
+  margin-left: 10px;
+  margin-right: 10px;
 }

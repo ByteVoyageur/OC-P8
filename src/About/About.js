@@ -1,16 +1,15 @@
 //About.js
-import React from 'react'
-import './About.scss'
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
+import React from 'react';
+import './About.scss';
+import Banner from '../Banner/Banner';
+import aboutBannerImage from '../assets/img/kalen.png'; 
 
 const About = () => {
   return (
-    <div>
-      <Header />
-      <Footer />
+    <div className='about-banner'> 
+      <Banner backgroundImg={aboutBannerImage} />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

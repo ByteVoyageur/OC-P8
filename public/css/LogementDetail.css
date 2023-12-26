@@ -13,30 +13,39 @@
 @media (max-width: 768px) {
   .logement-detail-content .logement-info-profile-rating {
     flex-direction: column;
+    align-items: normal;
+    width: 90%;
   }
 }
-
-.description-equipments-section {
+.logement-detail-content .description-equipments-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 35px;
 }
 @media (max-width: 768px) {
-  .description-equipments-section {
+  .logement-detail-content .description-equipments-section {
     flex-direction: column;
     gap: 20px;
   }
 }
-.description-equipments-section .description-section, .description-equipments-section .equipments-section {
+.logement-detail-content .description-equipments-section .description-section, .logement-detail-content .description-equipments-section .equipments-section {
+  display: flex;
+  flex-direction: column;
   width: 50%;
 }
 @media (max-width: 768px) {
-  .description-equipments-section .description-section, .description-equipments-section .equipments-section {
+  .logement-detail-content .description-equipments-section .description-section, .logement-detail-content .description-equipments-section .equipments-section {
     width: 100%;
+    align-items: flex-start;
   }
 }
-.description-equipments-section .toggle-button {
+.logement-detail-content .description-equipments-section .equipments-section {
+  align-items: flex-end;
+}
+.logement-detail-content .description-equipments-section .equipments-section .equipments-toggle {
+  align-self: flex-end;
+  margin-left: auto;
   background-color: #ff6060;
   color: white;
   border: none;
@@ -45,28 +54,49 @@
   width: 90%;
   border-radius: 8px;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.description-equipments-section .toggle-button:focus {
-  outline: none;
+@media (max-width: 768px) {
+  .logement-detail-content .description-equipments-section .equipments-section .equipments-toggle {
+    align-self: flex-start;
+    margin-left: 0;
+  }
 }
-.description-equipments-section .toggle-button::after {
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 5px;
-  vertical-align: middle;
-  border-top: 5px solid;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
+@media (max-width: 768px) {
+  .logement-detail-content .description-equipments-section .equipments-section {
+    align-items: flex-start;
+    width: 100%;
+  }
 }
-.description-equipments-section .toggle-button.open::after {
-  border-top: none;
-  border-bottom: 5px solid;
+.logement-detail-content .description-equipments-section .toggle-button {
+  background-color: #ff6060;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 90%;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.description-equipments-section .description, .description-equipments-section .equipments {
+.logement-detail-content .description-equipments-section .toggle-button .arrow-down-icon, .logement-detail-content .description-equipments-section .toggle-button .arrow-up-icon {
+  transition: transform 0.3s ease;
+  width: 20px;
+  height: auto;
+}
+.logement-detail-content .description-equipments-section .toggle-button.open .arrow-down-icon {
+  transform: rotate(180deg);
+}
+.logement-detail-content .description-equipments-section .toggle-button.open .arrow-up-icon {
+  transform: rotate(-180deg);
+}
+.logement-detail-content .description-equipments-section .description, .logement-detail-content .description-equipments-section .equipments {
   display: none;
 }
-.description-equipments-section .description.open, .description-equipments-section .equipments.open {
-  display: block;
+.logement-detail-content .description-equipments-section .description.open, .logement-detail-content .description-equipments-section .equipments.open {
+  display: flex;
 }

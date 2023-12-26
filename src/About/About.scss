@@ -1,0 +1,15 @@
+//About.scss
+.about-banner {
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin: 0 auto; 
+
+  
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 480px) {
+  }
+}

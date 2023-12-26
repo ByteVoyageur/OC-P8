@@ -2,7 +2,7 @@
   position: relative;
   background-size: cover;
   background-position: center;
-  height: 165px;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@
 }
 @media (max-width: 768px) {
   .banner {
-    height: 250px;
+    height: 150px;
   }
   .banner__title {
     font-size: 1.5rem;
@@ -40,7 +40,7 @@
 }
 @media (max-width: 480px) {
   .banner {
-    height: 200px;
+    height: 120px;
   }
   .banner__title {
     font-size: 1.2rem;

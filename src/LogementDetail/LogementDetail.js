@@ -8,6 +8,7 @@ import HostProfile from './HostProfile/HostProfile'
 import Description from './Description/Description'
 import Equipments from './Equipments/Equipments'
 import Rating from './Rating/Rating'
+import ArrowDownSvg from '../../src/assets/img/down-arrow.svg'
 import './LogementDetail.scss'
 
 const LogementDetail = () => {
@@ -46,14 +47,16 @@ const LogementDetail = () => {
         <div className="description-section">
           <button onClick={toggleDescription} className={`toggle-button ${isDescriptionOpen ? 'open' : ''}`}>
             Description
+            <img src={ArrowDownSvg} className={`arrow-down-icon ${isDescriptionOpen ? 'rotated' : ''}`} alt="arrow" />
           </button>
           {isDescriptionOpen && (
           <Description description={logement.description} isOpen={isDescriptionOpen} />
             )}
         </div>
         <div className="equipments-section">
-          <button onClick={toggleEquipments} className={`toggle-button ${isEquipmentsOpen ? 'open' : ''}`}>
+          <button onClick={toggleEquipments} className={`toggle-button equipments-toggle ${isEquipmentsOpen ? 'open' : ''}`}>
             Équipements
+            <img src={ArrowDownSvg} className={`arrow-down-icon ${isDescriptionOpen ? 'rotated' : ''}`} alt="arrow" />
           </button>
           {isEquipmentsOpen && (
           <Equipments equipments={logement.equipments} isOpen={isEquipmentsOpen} />
