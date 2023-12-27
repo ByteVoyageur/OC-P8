@@ -1,3 +1,7 @@
+//LogementDetail.scss
+
+@import '../assets/stylesCommon/toggle-button-common';
+
 .logement-detail-content {
   display: flex;
   flex-direction: column;
@@ -19,22 +23,23 @@
 
   .description-equipments-section {
     display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 35px;
 
     @media (max-width: 768px) {
-      flex-direction: column; 
+      flex-direction: column;
       gap: 20px;
     }
 
-    .description-section, .equipments-section {
+    .description-section,
+    .equipments-section {
       display: flex;
       flex-direction: column;
-      width: 50%; 
+      width: 50%;
 
       @media (max-width: 768px) {
-        width: 100%; 
+        width: 100%;
         align-items: flex-start;
       }
     }
@@ -43,19 +48,9 @@
       align-items: flex-end;
 
       .equipments-toggle {
+        @extend %toggle-button-common;
         align-self: flex-end;
         margin-left: auto;
-        background-color: #ff6060; 
-        color: white; 
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        width: 90%;
-        border-radius: 8px;
-        text-align: left;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
         @media (max-width: 768px) {
           align-self: flex-start;
@@ -65,43 +60,21 @@
 
       @media (max-width: 768px) {
         align-items: flex-start;
-        width: 100%; 
+        width: 100%;
       }
     }
 
     .toggle-button {
-      background-color: #ff6060;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      width: 90%;
-      border-radius: 8px;
-      text-align: left;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .arrow-down-icon, .arrow-up-icon {
-        transition: transform 0.3s ease;
-        width: 20px; 
-        height: auto;
-      }
-
-      &.open .arrow-down-icon {
-        transform: rotate(180deg);
-      }
-
-      &.open .arrow-up-icon {
-        transform: rotate(-180deg);
-      }
+      @extend %toggle-button-common;
     }
 
-    .description, .equipments {
+    .description,
+    .equipments {
       display: none;
     }
 
-    .description.open, .equipments.open {
+    .description.open,
+    .equipments.open {
       display: flex;
     }
   }

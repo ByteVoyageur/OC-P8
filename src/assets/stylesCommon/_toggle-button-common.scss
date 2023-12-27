@@ -1,0 +1,25 @@
+// _toggle-button-common.scss
+%toggle-button-common {
+  background-color: #ff6060;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  width: 90%;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .arrow-down-icon,
+  .arrow-up-icon {
+    transition: transform 0.3s ease;
+    width: 25px;
+    height: auto;
+  }
+
+  &.open .arrow-down-icon {
+    transform: rotate(180deg);
+  }
+}

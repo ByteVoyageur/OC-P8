@@ -18,6 +18,7 @@ function App() {
           <Route exact path='/' element={<HomePage />} />
           <Route path='/logement/:id' element={<LogementDetail />} />
           <Route path='/about' element={<About />} />
+          <Route path='/not-found' element={<NotFound />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />

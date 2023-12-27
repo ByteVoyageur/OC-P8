@@ -1,15 +1,18 @@
 //About.scss
-.about-banner {
-  width: 100%; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  margin: 0 auto; 
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
 
-  
-  @media (max-width: 768px) {
-  }
-
-  @media (max-width: 480px) {
+  .accordion-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
   }
 }

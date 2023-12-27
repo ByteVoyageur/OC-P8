@@ -1,0 +1,64 @@
+.about-accordion-button .about-toggle-button {
+  background-color: #ff6060;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  width: 90%;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-accordion-button .about-toggle-button .arrow-down-icon,
+.about-accordion-button .about-toggle-button .arrow-up-icon {
+  transition: transform 0.3s ease;
+  width: 25px;
+  height: auto;
+}
+.about-accordion-button .open.about-toggle-button .arrow-down-icon {
+  transform: rotate(180deg);
+}
+
+.about-accordion-button {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .about-accordion-button .about-toggle-button {
+    width: 100%;
+  }
+}
+.about-accordion-button.open .about-toggle-button .arrow-down-icon {
+  transform: rotate(180deg);
+}
+.about-accordion-button .content {
+  display: flex;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 2s ease-in-out, padding 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  width: 90%;
+}
+@media (max-width: 768px) {
+  .about-accordion-button .content {
+    width: 100%;
+  }
+}
+.about-accordion-button .content.open {
+  background-color: #f6f6f6;
+  color: #ff6060;
+  max-height: 350px;
+  opacity: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.about-accordion-button .content.open p {
+  margin-left: 10px;
+  margin-right: 10px;
+}

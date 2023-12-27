@@ -1,3 +1,27 @@
+.logement-detail-content .description-equipments-section .toggle-button, .logement-detail-content .description-equipments-section .equipments-section .equipments-toggle {
+  background-color: #ff6060;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  width: 90%;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logement-detail-content .description-equipments-section .toggle-button .arrow-down-icon, .logement-detail-content .description-equipments-section .equipments-section .equipments-toggle .arrow-down-icon,
+.logement-detail-content .description-equipments-section .toggle-button .arrow-up-icon,
+.logement-detail-content .description-equipments-section .equipments-section .equipments-toggle .arrow-up-icon {
+  transition: transform 0.3s ease;
+  width: 25px;
+  height: auto;
+}
+.logement-detail-content .description-equipments-section .open.toggle-button .arrow-down-icon, .logement-detail-content .description-equipments-section .equipments-section .open.equipments-toggle .arrow-down-icon {
+  transform: rotate(180deg);
+}
+
 .logement-detail-content {
   display: flex;
   flex-direction: column;
@@ -29,13 +53,15 @@
     gap: 20px;
   }
 }
-.logement-detail-content .description-equipments-section .description-section, .logement-detail-content .description-equipments-section .equipments-section {
+.logement-detail-content .description-equipments-section .description-section,
+.logement-detail-content .description-equipments-section .equipments-section {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 @media (max-width: 768px) {
-  .logement-detail-content .description-equipments-section .description-section, .logement-detail-content .description-equipments-section .equipments-section {
+  .logement-detail-content .description-equipments-section .description-section,
+  .logement-detail-content .description-equipments-section .equipments-section {
     width: 100%;
     align-items: flex-start;
   }
@@ -46,17 +72,6 @@
 .logement-detail-content .description-equipments-section .equipments-section .equipments-toggle {
   align-self: flex-end;
   margin-left: auto;
-  background-color: #ff6060;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  width: 90%;
-  border-radius: 8px;
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 @media (max-width: 768px) {
   .logement-detail-content .description-equipments-section .equipments-section .equipments-toggle {
@@ -70,33 +85,11 @@
     width: 100%;
   }
 }
-.logement-detail-content .description-equipments-section .toggle-button {
-  background-color: #ff6060;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  width: 90%;
-  border-radius: 8px;
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logement-detail-content .description-equipments-section .toggle-button .arrow-down-icon, .logement-detail-content .description-equipments-section .toggle-button .arrow-up-icon {
-  transition: transform 0.3s ease;
-  width: 20px;
-  height: auto;
-}
-.logement-detail-content .description-equipments-section .toggle-button.open .arrow-down-icon {
-  transform: rotate(180deg);
-}
-.logement-detail-content .description-equipments-section .toggle-button.open .arrow-up-icon {
-  transform: rotate(-180deg);
-}
-.logement-detail-content .description-equipments-section .description, .logement-detail-content .description-equipments-section .equipments {
+.logement-detail-content .description-equipments-section .description,
+.logement-detail-content .description-equipments-section .equipments {
   display: none;
 }
-.logement-detail-content .description-equipments-section .description.open, .logement-detail-content .description-equipments-section .equipments.open {
+.logement-detail-content .description-equipments-section .description.open,
+.logement-detail-content .description-equipments-section .equipments.open {
   display: flex;
 }
