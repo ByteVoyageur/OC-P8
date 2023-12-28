@@ -1,11 +1,16 @@
-//LogementListe.js
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import LogementCarte from '../LogementCarte/LogementCarte'
-import logementsData from '../assets/data/logements.json'
 import './LogementListe.scss'
 
 function LogementListe() {
-  const [logements] = useState(logementsData)
+  const [logements, setLogements] = useState([])
+
+  useEffect(() => {
+    fetch('/logements.json')
+      .then((response) => response.json())
+      .then((data) => setLogements(data))
+      .catch((error) => console.error('Error fetching data: ', error))
+  }, [])
 
   return (
     <div className='logement-liste'>

@@ -2,27 +2,31 @@
 .logement-info {
   display: flex;
   flex-direction: column;
-  margin: 20px; 
+  margin-top: 10px;
+  margin-bottom: 5px;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
   }
 
-  h1, h2 {
-    margin: 0; 
+  h1,
+  h2 {
+    margin: 0;
   }
 
   h1 {
     font-size: 1.8rem;
-    color: #FF6060; 
+    color: #ff6060;
+    font-weight: 500;
   }
 
   h2 {
-    font-size: 1.25rem;
-    color: #FF6060; 
-    padding-top: 6px;
-    padding-bottom: 6px;
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: #ff6060;
+    padding-top: 5px;
+    padding-bottom: 10px;
   }
 
   ul {
@@ -30,12 +34,15 @@
     padding: 0;
     display: flex;
     gap: 10px;
+    @media screen and (max-width: 768px) {
+      margin: 0;
+    }
 
     li {
-      background: #FF6060; 
-      color: #fff; 
-      padding: 6px 20px;
-      border-radius: 20px; 
+      background: #ff6060;
+      color: #fff;
+      padding: 3px 20px;
+      border-radius: 25px;
       font-size: 0.65rem;
     }
   }

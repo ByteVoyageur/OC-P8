@@ -22,7 +22,12 @@
         a {
           text-decoration: none;
           color: #ff6060;
-          font-weight: bold;
+          white-space: nowrap;
+          min-width: 100px;
+          font-size: clamp(12px, 2.2vw, 24px);
+          @media screen and (max-width: 768px) {
+            font-size: 3.5vw;
+          }
 
           &:hover {
             text-decoration: underline;

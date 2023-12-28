@@ -30,10 +30,12 @@
   padding: 12px;
   color: white;
   z-index: 2;
+  width: 60%;
 }
 .logement-carte .logement-title {
   font-size: 1em;
   margin: 0;
+  font-weight: 500;
 }
 .logement-carte::after {
   content: "";

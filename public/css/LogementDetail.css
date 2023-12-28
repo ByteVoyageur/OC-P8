@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Montserrat";
 }
 .logement-detail-content .description-equipments-section .toggle-button .arrow-down-icon, .logement-detail-content .description-equipments-section .equipments-section .equipments-toggle .arrow-down-icon,
 .logement-detail-content .description-equipments-section .toggle-button .arrow-up-icon,
@@ -38,7 +39,7 @@
   .logement-detail-content .logement-info-profile-rating {
     flex-direction: column;
     align-items: normal;
-    width: 90%;
+    width: 98%;
   }
 }
 .logement-detail-content .description-equipments-section {
@@ -77,11 +78,17 @@
   .logement-detail-content .description-equipments-section .equipments-section .equipments-toggle {
     align-self: flex-start;
     margin-left: 0;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
   .logement-detail-content .description-equipments-section .equipments-section {
     align-items: flex-start;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .logement-detail-content .description-equipments-section .toggle-button {
     width: 100%;
   }
 }

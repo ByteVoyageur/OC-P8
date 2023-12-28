@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  color: #FF6060;
+  color: #ff6060;
 }
 .host-profile .host-name-container {
   display: flex;
@@ -10,8 +10,9 @@
   text-align: right;
 }
 .host-profile .host-name-container h3 {
-  font-size: 1em;
+  font-size: 0.85em;
   margin: 0;
+  font-weight: 200;
 }
 .host-profile .host-picture-container {
   margin-left: 5px;
@@ -21,15 +22,15 @@
   display: block;
 }
 .host-profile .host-picture {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
 @media (max-width: 768px) {
   .host-profile {
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     gap: 5px;
   }
   .host-profile .host-name-container {

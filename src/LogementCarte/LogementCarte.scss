@@ -8,11 +8,11 @@
   position: relative;
   transition: box-shadow 0.3s ease;
 
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     height: auto;
     aspect-ratio: unset;
-  } 
-    
+  }
+
   &:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   }
@@ -32,11 +32,13 @@
     padding: 12px;
     color: white;
     z-index: 2;
+    width: 60%;
   }
 
   .logement-title {
     font-size: 1em;
     margin: 0;
+    font-weight: 500;
   }
 
   &::after {

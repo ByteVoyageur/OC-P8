@@ -8,7 +8,6 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
   }
 }
 .profile-rating .rating {
@@ -21,7 +20,7 @@
 .profile-rating .rating .filled-star,
 .profile-rating .rating .empty-star {
   margin-right: 2px;
-  color: #FF6060;
+  color: #ff6060;
 }
 @media (max-width: 768px) {
   .profile-rating .rating {

@@ -5,8 +5,13 @@
 }
 .gallery .gallery__image {
   width: 100%;
-  max-height: 643px;
+  max-height: 415px;
   object-fit: cover;
+}
+@media (max-width: 768px) {
+  .gallery .gallery__image {
+    max-height: 335px;
+  }
 }
 .gallery .gallery__arrow {
   position: absolute;

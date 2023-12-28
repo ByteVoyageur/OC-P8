@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Montserrat";
 }
 .about-accordion-button .about-toggle-button .arrow-down-icon,
 .about-accordion-button .about-toggle-button .arrow-up-icon {
