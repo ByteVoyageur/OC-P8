@@ -1,0 +1,21 @@
+//Description.scss
+.description {
+  display: flex;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+
+  &.open {
+    background-color: #f6f6f6;
+    color: #ff6060;
+    max-height: 500px;
+    opacity: 1;
+    width: 90%;
+    transition: max-height 2s ease-in-out, padding 0.5s ease-in-out,
+      opacity 0.5s ease-in-out;
+    p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+//LogementDetail.scss
+
+@import '../assets/stylesCommon/toggle-button-common';
+
+.logement-detail-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+
+  .logement-info-profile-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: normal;
+      width: 98%;
+    }
+  }
+
+  .description-equipments-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .description-section,
+    .equipments-section {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        align-items: flex-start;
+      }
+    }
+
+    .equipments-section {
+      align-items: flex-end;
+
+      .equipments-toggle {
+        @extend %toggle-button-common;
+        align-self: flex-end;
+        margin-left: auto;
+
+        @media (max-width: 768px) {
+          align-self: flex-start;
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        align-items: flex-start;
+        width: 100%;
+      }
+    }
+
+    .toggle-button {
+      @extend %toggle-button-common;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .description,
+    .equipments {
+      display: none;
+    }
+
+    .description.open {
+      display: flex;
+      width: 90%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    .equipments.open {
+      display: flex;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+// HostProfile.scss
+.host-profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #ff6060;
+
+  .host-name-container {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    h3 {
+      font-size: 0.85em;
+      margin: 0;
+      font-weight: 200;
+    }
+  }
+
+  .host-picture-container {
+    margin-left: 5px;
+  }
+
+  .host-first-name,
+  .host-last-name {
+    display: block;
+  }
+
+  .host-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 5px;
+
+    .host-name-container {
+      text-align: left;
+    }
+
+    .host-picture-container {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+}

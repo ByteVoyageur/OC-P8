@@ -1,0 +1,50 @@
+// Banner.scss
+.banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 90%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    border-radius: 20px;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+
+  &__title {
+    font-size: 2rem;
+    padding: 0 2rem;
+  }
+
+  @media (max-width: 768px) {
+    height: 150px;
+    &__title {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: 120px;
+    &__title {
+      font-size: 1.2rem;
+    }
+  }
+}

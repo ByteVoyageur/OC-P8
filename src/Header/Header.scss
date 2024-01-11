@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 25px;
+  padding-top: 25px;
+
+  &__logo {
+    max-width: 200px;
+    height: auto;
+  }
+
+  &__nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 3rem;
+
+      li {
+        a {
+          text-decoration: none;
+          color: #ff6060;
+          white-space: nowrap;
+          min-width: 100px;
+          font-size: clamp(12px, 2.2vw, 24px);
+          @media screen and (max-width: 768px) {
+            font-size: 3.5vw;
+          }
+
+          &:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6060;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+//Accordion.scss
+@import '../../assets/stylesCommon/toggle-button-common';
+.about-accordion-button {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .about-toggle-button {
+    @extend %toggle-button-common;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  &.open .about-toggle-button .arrow-down-icon {
+    transform: rotate(180deg);
+  }
+
+  .content {
+    display: flex;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 2s ease-in-out, padding 0.5s ease-in-out,
+      opacity 0.5s ease-in-out;
+    width: 90%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    &.open {
+      background-color: #f6f6f6;
+      color: #ff6060;
+      max-height: 350px;
+      opacity: 1;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      p {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
