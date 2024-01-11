@@ -1,3 +1,4 @@
+//About.js
 import React from 'react'
 import './About.scss'
 import Banner from '../Banner/Banner'
@@ -5,7 +6,6 @@ import Accordion from './Accordion/Accordion'
 import aboutBannerImage from '../assets/img/kalen.png'
 
 const About = () => {
-  // Define the sections with the content shown in the screenshot.
   const sections = [
     {
       title: 'Fiabilité',

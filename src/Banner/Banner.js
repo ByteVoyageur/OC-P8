@@ -4,11 +4,11 @@ import './Banner.scss'
 
 const Banner = ({ backgroundImg, title }) => {
   const bannerStyle = {
-    backgroundImage: backgroundImg ? `url(${backgroundImg})` : undefined
-  };
+    backgroundImage: backgroundImg ? `url(${backgroundImg})` : undefined,
+  }
 
   return (
-    <div className="banner" style={bannerStyle}>
+    <div className='banner' style={bannerStyle}>
       {title && (
         <div className='banner__content'>
           <h1 className='banner__title'>{title}</h1>
@@ -18,5 +18,4 @@ const Banner = ({ backgroundImg, title }) => {
   )
 }
 
-export default Banner;
-
+export default Banner
