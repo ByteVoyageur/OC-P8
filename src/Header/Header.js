@@ -1,6 +1,7 @@
 //Header.js
 import React from 'react'
 import './Header.scss'
+import { Link } from 'react-router-dom'
 import { ReactComponent as Logo } from '../assets/img/logo_kasa.svg'
 
 const Header = () => {
@@ -10,10 +11,10 @@ const Header = () => {
       <nav className='header__nav'>
         <ul>
           <li>
-            <a href='/'>Accueil</a>
+            <Link to='/'>Accueil</Link>
           </li>
           <li>
-            <a href='/about'>A Propos</a>
+            <Link to='/about'>A Propos</Link>
           </li>
         </ul>
       </nav>
