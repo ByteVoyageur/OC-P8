@@ -4,7 +4,7 @@ import leftArrow from '../../assets/img/arrow_left.svg'
 import rightArrow from '../../assets/img/arrow_right.svg'
 import './PhotoSlider.scss'
 
-const PhotoGallery = ({ pictures }) => {
+const PhotoSlider = ({ pictures }) => {
   const [current, setCurrent] = useState(0)
   const total = pictures.length
 
@@ -40,4 +40,4 @@ const PhotoGallery = ({ pictures }) => {
   )
 }
 
-export default PhotoGallery
+export default PhotoSlider
